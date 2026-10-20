@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara Nail - Օնլայն Ամրագրում</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="booking-wizard">
+    <h1>Zara Nail Booking</h1>
+
+    <!-- Քայլ 1: Հասցեի ընտրություն -->
+    <div id="step1">
+      <h3>1. Ընտրեք Հասցեն</h3>
+      <button class="branch-btn" data-branch="branch_1">Մասնաճյուղ 1</button>
+      <button class="branch-btn" data-branch="branch_2">Մասնաճյուղ 2</button>
+    </div>
+
+    <!-- Քայլ 2: Աշխատակցի ընտրություն -->
+    <div id="step2" style="display:none;">
+      <h3>2. Ընտրեք Մասնագետին</h3>
+      <div id="workersList"></div>
+    </div>
+
+    <!-- Քայլ 3: Ազատ ժամի ընտրություն -->
+    <div id="step3" style="display:none;">
+      <h3>3. Ընտրեք Ժամը</h3>
+      <div id="slotsList"></div>
+    </div>
+
+    <!-- Քայլ 4: Տվյալների լրացում -->
+    <div id="step4" style="display:none;">
+      <h3>4. Լրացրեք տվյալները</h3>
+      <input type="text" id="clientName" placeholder="Ձեր Անունը">
+      <input type="tel" id="clientPhone" placeholder="Հեռախոսահամար">
+      <button id="confirmBookingBtn">Հաստատել Ամրագրումը</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

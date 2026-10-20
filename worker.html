@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara Nail - Աշխատակցի Էջ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="worker-container">
+    <h2>Անձնական Պրոֆիլ</h2>
+    
+    <!-- 1. Առաջին անգամ մտնելիս պրոֆիլի լրացում -->
+    <section id="profileSetup">
+      <h3>Լրացրեք Ձեր տվյալները</h3>
+      <input type="text" id="workerName" placeholder="Ձեր Անուն Ազգանունը">
+      <input type="text" id="workerService" placeholder="Ձեր Ծառայությունը (օր․ Մանիկյուր)">
+      <button id="saveProfileBtn">Պահպանել</button>
+    </section>
+
+    <hr>
+
+    <!-- 2. Ազատ ժամերի ավելացում -->
+    <section id="scheduleSetup">
+      <h3>Ավելացնել Ազատ Ժամ</h3>
+      <input type="date" id="slotDate">
+      <input type="time" id="slotTime">
+      <button id="addSlotBtn">Ավելացնել Ժամը</button>
+    </section>
+
+    <!-- 3. Ամրագրված պատվերների ցանկ -->
+    <section id="myBookings">
+      <h3>Իմ Պատվերները</h3>
+      <ul id="bookingsList"></ul>
+    </section>
+  </div>
+
+  <script type="module" src="js/worker.js"></script>
+</body>
+</html>

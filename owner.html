@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara Nail - Տիրոջ Պանել</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Ավելացնել Նոր Աշխատակից</h1>
+    
+    <form id="addWorkerForm">
+      <label>Ընտրեք Հասցեն՝</label>
+      <select id="branchSelect" required>
+        <option value="branch_1">Հասցե 1 (Մասնաճյուղ 1)</option>
+        <option value="branch_2">Հասցե 2 (Մասնաճյուղ 2)</option>
+      </select>
+
+      <input type="email" id="workerEmail" placeholder="Աշխատակցի Email" required>
+      <input type="password" id="workerPassword" placeholder="Ժամանակավոր Գաղտնաբառ" required>
+      
+      <button type="submit">Ստեղծել Աշխատակից</button>
+    </form>
+    
+    <p id="successMsg" class="success"></p>
+  </div>
+
+  <script type="module" src="js/owner.js"></script>
+</body>
+</html>
